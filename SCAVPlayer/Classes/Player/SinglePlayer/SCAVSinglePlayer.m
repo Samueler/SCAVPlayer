@@ -35,7 +35,7 @@
 }
 
 - (instancetype)initWithURL:(NSURL *)URL {
-    return [self initWithURL:URL loopCount:self.loopCount];
+    return [self initWithURL:URL loopCount:1];
 }
 
 - (instancetype)initWithURL:(NSURL *)URL loopCount:(NSInteger)loopCount {

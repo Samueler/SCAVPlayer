@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E30F2A3246D4EDA00B894BC /* SCAVSinglePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E30F2A2246D4EDA00B894BC /* SCAVSinglePlayerVC.m */; };
+		2E30F2A6246D4EE700B894BC /* SCAVQueuePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E30F2A5246D4EE700B894BC /* SCAVQueuePlayerVC.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,10 +40,14 @@
 
 /* Begin PBXFileReference section */
 		296552621F61EE4D934A35CA /* Pods_SCAVPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCAVPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E30F2A1246D4EDA00B894BC /* SCAVSinglePlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAVSinglePlayerVC.h; sourceTree = "<group>"; };
+		2E30F2A2246D4EDA00B894BC /* SCAVSinglePlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAVSinglePlayerVC.m; sourceTree = "<group>"; };
+		2E30F2A4246D4EE700B894BC /* SCAVQueuePlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAVQueuePlayerVC.h; sourceTree = "<group>"; };
+		2E30F2A5246D4EE700B894BC /* SCAVQueuePlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAVQueuePlayerVC.m; sourceTree = "<group>"; };
 		3441824AC7D58F2FFA6A4DDD /* Pods-SCAVPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAVPlayer_Example.debug.xcconfig"; path = "Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D7C997173AFA75A2A65E223 /* Pods-SCAVPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAVPlayer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SCAVPlayer_Tests/Pods-SCAVPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		411305E4FE9A1E688B7024E1 /* Pods-SCAVPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAVPlayer_Example.release.xcconfig"; path = "Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		457CC029C8F48755B03C42E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		457CC029C8F48755B03C42E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SCAVPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAVPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +71,8 @@
 		84D1027D538E8DE8FCAB941B /* Pods_SCAVPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCAVPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1FDF3A2991A543633845FB5 /* Pods-SCAVPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAVPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-SCAVPlayer_Tests/Pods-SCAVPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F796CA913BB345841FB05571 /* SCAVPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SCAVPlayer.podspec; path = ../SCAVPlayer.podspec; sourceTree = "<group>"; };
-		FE007A5FB03511DBE26D1F47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F796CA913BB345841FB05571 /* SCAVPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SCAVPlayer.podspec; path = ../SCAVPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE007A5FB03511DBE26D1F47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,10 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				2E30F2A1246D4EDA00B894BC /* SCAVSinglePlayerVC.h */,
+				2E30F2A2246D4EDA00B894BC /* SCAVSinglePlayerVC.m */,
+				2E30F2A4246D4EE700B894BC /* SCAVQueuePlayerVC.h */,
+				2E30F2A5246D4EE700B894BC /* SCAVQueuePlayerVC.m */,
 			);
 			name = "Example for SCAVPlayer";
 			path = SCAVPlayer;
@@ -193,7 +203,6 @@
 				3D7C997173AFA75A2A65E223 /* Pods-SCAVPlayer_Tests.debug.xcconfig */,
 				F1FDF3A2991A543633845FB5 /* Pods-SCAVPlayer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -246,8 +255,11 @@
 			attributes = {
 				CLASSPREFIX = SCAV;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "samueler.chen@gmail.com";
+				ORGANIZATIONNAME = ty.Chen;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 539H8N2VYM;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +337,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/SCAVPlayer/SCAVPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCAVPlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +379,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E30F2A3246D4EDA00B894BC /* SCAVSinglePlayerVC.m in Sources */,
 				6003F59E195388D20070C39A /* SCAVAppDelegate.m in Sources */,
+				2E30F2A6246D4EE700B894BC /* SCAVQueuePlayerVC.m in Sources */,
 				6003F5A7195388D20070C39A /* SCAVViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -449,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -494,9 +511,11 @@
 			baseConfigurationReference = 3441824AC7D58F2FFA6A4DDD /* Pods-SCAVPlayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 539H8N2VYM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCAVPlayer/SCAVPlayer-Prefix.pch";
 				INFOPLIST_FILE = "SCAVPlayer/SCAVPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +529,11 @@
 			baseConfigurationReference = 411305E4FE9A1E688B7024E1 /* Pods-SCAVPlayer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 539H8N2VYM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCAVPlayer/SCAVPlayer-Prefix.pch";
 				INFOPLIST_FILE = "SCAVPlayer/SCAVPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

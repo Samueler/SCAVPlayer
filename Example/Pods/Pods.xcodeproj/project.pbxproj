@@ -1,0 +1,1073 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C92DCF656F0C91474C05E2D9EDE582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5DD0E9B34567258A591EF6736AD23 /* Foundation.framework */; };
+		0A1B2B6EA1B542FA5C209768310B4E37 /* Pods-SCAVPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C65DD885CCB2153DEE96DF5D77622D /* Pods-SCAVPlayer_Example-dummy.m */; };
+		0A5D96082E891F92F295966FD0B1E8AC /* Pods-SCAVPlayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0EE6C60AD912AEDB63493F4F18099 /* Pods-SCAVPlayer_Tests-dummy.m */; };
+		0CA38C774983DF3795B3126DF160510B /* SCAVQueuePlayerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B1E028A980825A822747E6D74104E4 /* SCAVQueuePlayerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19D62B5850DBBC1868A55E502FE22589 /* KVOController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05CDBF9737F6A5325E0949C559D96E7 /* KVOController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A09A36C7ED2126FE226AB9D55D2EEE6 /* NSObject+FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = B12BD1702408F78DB227BF98AC60DB77 /* NSObject+FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E2B3B8DDF48F6F10AFDB563C709CC00 /* KVOController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6277F2A5545DB72DDE87391D5F8B3687 /* KVOController.framework */; };
+		292C2B4CAA588D9AF6F21B99DEF0AD8D /* SCAVSinglePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF28026937F281F991EACF68890515F /* SCAVSinglePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D59280150350F92984655DB59A0E060 /* SCAVPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AEC2A624095661DB6D9939E19A4F57 /* SCAVPlayer-dummy.m */; };
+		6294D870F849605603DB74BC4EC378A3 /* SCAVQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9CFF99427B2A8A327411F144B44D0 /* SCAVQueuePlayer.m */; };
+		75A2B460366AE806A610C9B90C64B797 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C3212C0404C1E75A9A108D08BC6B09 /* FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ADB80CC36A8EC52BADEC7E7025237BA /* SCAVPlayerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E47D0D169B70BBD60AE1134EBF39FB /* SCAVPlayerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D7AAAD0D98D85D3DA488EA61E2F7FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5DD0E9B34567258A591EF6736AD23 /* Foundation.framework */; };
+		889E2157616BF0844E55BCDC2C30A278 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2DDCD06FE07830A05F6215378AD489 /* NSObject+FBKVOController.m */; };
+		8EE50CA49BDB3CC47A65D143D798AA72 /* KVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 590565EFA674898392EFD7E5E68DD13D /* KVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95122AB59CBEFF7BA28ED6A95CEF984F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5DD0E9B34567258A591EF6736AD23 /* Foundation.framework */; };
+		9670C11FE884391249C5154C3E319CDF /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E1A3A5A6D67E7B1670D61DC2B03852 /* FBKVOController.m */; };
+		97797310E35466CF24878C74AF98805D /* Pods-SCAVPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5981B054593F52696BDFBAEB1597A7F5 /* Pods-SCAVPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8C349C46978DF528A142C1C0959039 /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F948D71767372BB492EA41C972847 /* KVOController-dummy.m */; };
+		AC5F062ED795308440DFF6B02FE01CF7 /* SCAVQueuePlayerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7446560338FD29E1C8FD5586CA16A1 /* SCAVQueuePlayerDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF4A5F0DA19F5C14F88F12D09EBB0071 /* Pods-SCAVPlayer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C5DB5CC36840FC93F8415F7B3807E2 /* Pods-SCAVPlayer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7F5C0A252079A5FA9A9DEA41BCBEE6 /* SCAVQueuePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6155BB82E77687E0E610D1EECC3650B2 /* SCAVQueuePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE1978D446DB9AEBB67353744FD89723 /* SCAVSinglePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDDB7E5FA162B1D292FB1FB0AD99071 /* SCAVSinglePlayer.m */; };
+		D0BFC754978B8EF36DDEF963A7CE680F /* SCAVPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F94A08ACA43C561344DA603EA019B2 /* SCAVPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76DE0EFCEE3CD2D80FF8D7A61178DE9 /* SCAVSinglePlayerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FEEB58F28E5784BADC7C2BD1BFB97EF0 /* SCAVSinglePlayerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA493E7583B460397914EA6A7E700595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5DD0E9B34567258A591EF6736AD23 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		697CE195868884C1051B37004772801B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2568F753F09C4DFFD8770DCC78EDAEAE;
+			remoteInfo = KVOController;
+		};
+		E26D5F9765B406AF2D211710D38D000C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F920761D9ECF6D9E6DA86D6AD0A32FEB;
+			remoteInfo = SCAVPlayer;
+		};
+		E58A09A546A1E98DEE9A247750D2C7BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578DDBE1409B4EC8460CDCFACCA8EA46;
+			remoteInfo = "Pods-SCAVPlayer_Example";
+		};
+		F0F592465FC4EE10CAA53B7AFA6964D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2568F753F09C4DFFD8770DCC78EDAEAE;
+			remoteInfo = KVOController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C65DD885CCB2153DEE96DF5D77622D /* Pods-SCAVPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SCAVPlayer_Example-dummy.m"; sourceTree = "<group>"; };
+		14FE957A565F032E3780068A7E7973DE /* SCAVPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCAVPlayer.release.xcconfig; sourceTree = "<group>"; };
+		15F5DD0E9B34567258A591EF6736AD23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1892B384680FFAB55A3CF9651A9D6C8C /* Pods-SCAVPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAVPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		18C3212C0404C1E75A9A108D08BC6B09 /* FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBKVOController.h; path = FBKVOController/FBKVOController.h; sourceTree = "<group>"; };
+		1D9F948D71767372BB492EA41C972847 /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
+		1F048B46EE717344AEC2A74F49762B61 /* KVOController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.release.xcconfig; sourceTree = "<group>"; };
+		20B45A48F10B9EA4FD382BFBC8E2C7F8 /* Pods-SCAVPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAVPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		213C52B876A3BAD884188B3AF1E023D2 /* Pods-SCAVPlayer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SCAVPlayer_Example.modulemap"; sourceTree = "<group>"; };
+		24D27D0D5CB092C8D6929A38AF88208B /* Pods-SCAVPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SCAVPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		256F164445465B6C81E4C041433A360E /* Pods-SCAVPlayer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAVPlayer_Tests-Info.plist"; sourceTree = "<group>"; };
+		2683BB7E551D032E286B12511A39E36C /* SCAVPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCAVPlayer.modulemap; sourceTree = "<group>"; };
+		2CEA8A3810B197B37B1BE0993863AFA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		31C4A8F16DDE2B9CB1FA4B3DAFDDA93E /* Pods_SCAVPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SCAVPlayer_Tests.framework; path = "Pods-SCAVPlayer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVOController.framework; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7446560338FD29E1C8FD5586CA16A1 /* SCAVQueuePlayerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCAVQueuePlayerDataSource.h; sourceTree = "<group>"; };
+		546FF1ED33CEB6647583D798CAF8237B /* SCAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCAVPlayer.framework; path = SCAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FCC91E6FB628DBD905FC393CBA689C /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
+		590565EFA674898392EFD7E5E68DD13D /* KVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOController.h; path = FBKVOController/KVOController.h; sourceTree = "<group>"; };
+		5981B054593F52696BDFBAEB1597A7F5 /* Pods-SCAVPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCAVPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
+		5ABD57A59A27BBE6CCAEB09DC78D9F82 /* SCAVPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCAVPlayer-prefix.pch"; sourceTree = "<group>"; };
+		5D28CF104BCD7373FE8072F5B4D138FF /* SCAVPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SCAVPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D3B744CA423DDB35AA732FB8924B54E /* KVOController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.debug.xcconfig; sourceTree = "<group>"; };
+		6155BB82E77687E0E610D1EECC3650B2 /* SCAVQueuePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCAVQueuePlayer.h; sourceTree = "<group>"; };
+		61B1E028A980825A822747E6D74104E4 /* SCAVQueuePlayerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCAVQueuePlayerDelegate.h; sourceTree = "<group>"; };
+		6277F2A5545DB72DDE87391D5F8B3687 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E47D0D169B70BBD60AE1134EBF39FB /* SCAVPlayerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCAVPlayerProtocol.h; sourceTree = "<group>"; };
+		69A4CB314A2B2B7E5DC5D13B8A8DC017 /* KVOController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KVOController.modulemap; sourceTree = "<group>"; };
+		6C00C802F884BC33E945B566C7406B4D /* Pods-SCAVPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SCAVPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		730EF8F421C59B6D7D3E7D99F0C24892 /* Pods-SCAVPlayer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SCAVPlayer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D46F8D1774C5008B1D072A57AC56EBC /* Pods_SCAVPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SCAVPlayer_Example.framework; path = "Pods-SCAVPlayer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDDB7E5FA162B1D292FB1FB0AD99071 /* SCAVSinglePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCAVSinglePlayer.m; sourceTree = "<group>"; };
+		81490FDFBDAE4CB52126F0424A4AFA2E /* Pods-SCAVPlayer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SCAVPlayer_Tests.modulemap"; sourceTree = "<group>"; };
+		87F94A08ACA43C561344DA603EA019B2 /* SCAVPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCAVPlayer-umbrella.h"; sourceTree = "<group>"; };
+		93A273DAB70F518778B64A6B25E5E7BE /* KVOController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KVOController-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A14452DEF31E164DF9B81A5C996E51B6 /* Pods-SCAVPlayer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAVPlayer_Example-Info.plist"; sourceTree = "<group>"; };
+		A1AEC2A624095661DB6D9939E19A4F57 /* SCAVPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCAVPlayer-dummy.m"; sourceTree = "<group>"; };
+		A9462464AA4A0E3E4BD11B9DE00F930A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AB0CC850D22623D943F88B42CD0410ED /* SCAVPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCAVPlayer-Info.plist"; sourceTree = "<group>"; };
+		AC89AB2BD644DEEA77FBCAD4D66FC97D /* Pods-SCAVPlayer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAVPlayer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B12BD1702408F78DB227BF98AC60DB77 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		B9F9CFF99427B2A8A327411F144B44D0 /* SCAVQueuePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCAVQueuePlayer.m; sourceTree = "<group>"; };
+		BAF28026937F281F991EACF68890515F /* SCAVSinglePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCAVSinglePlayer.h; sourceTree = "<group>"; };
+		C3A5C2FB52B7E064DECEE0CC91A79065 /* Pods-SCAVPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAVPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C5DB5CC36840FC93F8415F7B3807E2 /* Pods-SCAVPlayer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCAVPlayer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C8E1A3A5A6D67E7B1670D61DC2B03852 /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
+		D61668B083F4C56979C7F82C4EA78551 /* SCAVPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCAVPlayer.debug.xcconfig; sourceTree = "<group>"; };
+		D99E0120688F9013E9D1FD8DF58D0B2B /* Pods-SCAVPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAVPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2DDCD06FE07830A05F6215378AD489 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		E7F0EE6C60AD912AEDB63493F4F18099 /* Pods-SCAVPlayer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SCAVPlayer_Tests-dummy.m"; sourceTree = "<group>"; };
+		F05CDBF9737F6A5325E0949C559D96E7 /* KVOController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-umbrella.h"; sourceTree = "<group>"; };
+		FBE5C671115081E89D81E9C7478AD144 /* Pods-SCAVPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAVPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FEEB58F28E5784BADC7C2BD1BFB97EF0 /* SCAVSinglePlayerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCAVSinglePlayerDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED76D1E33EB354602B4FA9ABDF67D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C92DCF656F0C91474C05E2D9EDE582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F742DCE7CEB4316ADF3F383D4742439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95122AB59CBEFF7BA28ED6A95CEF984F /* Foundation.framework in Frameworks */,
+				1E2B3B8DDF48F6F10AFDB563C709CC00 /* KVOController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2ADB63F05C90C1583748CC273864200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA493E7583B460397914EA6A7E700595 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA749837471EE842F4B01CE102FA2469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D7AAAD0D98D85D3DA488EA61E2F7FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002DBC619A61BDA10759C13295481919 /* SinglePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BAF28026937F281F991EACF68890515F /* SCAVSinglePlayer.h */,
+				7FDDB7E5FA162B1D292FB1FB0AD99071 /* SCAVSinglePlayer.m */,
+			);
+			name = SinglePlayer;
+			path = SinglePlayer;
+			sourceTree = "<group>";
+		};
+		0C8EC282E109AE44014D5A1732D1F4D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6277F2A5545DB72DDE87391D5F8B3687 /* KVOController.framework */,
+				1D8DC617403847E4C0B940A1C827E02A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17D1E99143D350C0D830C71F8A979B6C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				D0D3B5463E302FE207146A36E5CE09D9 /* PlayerProtocol */,
+				8F7B5BD636A6B425448BF23F50A6D8A7 /* QueuePlayer */,
+				002DBC619A61BDA10759C13295481919 /* SinglePlayer */,
+			);
+			name = Player;
+			path = SCAVPlayer/Classes/Player;
+			sourceTree = "<group>";
+		};
+		1D8DC617403847E4C0B940A1C827E02A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				15F5DD0E9B34567258A591EF6736AD23 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		26CCD2FED08DC33B0B076B111477CC95 /* SCAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D624E7BBF42C98965B5DAFC444C69 /* DataSource */,
+				E2020A1BBE6093DEECAECAD786E0ABE3 /* Delegate */,
+				17D1E99143D350C0D830C71F8A979B6C /* Player */,
+				8ACA68F61E124187EEF3AAFAEB6439AB /* Pod */,
+				E5B34EDA9B2455C8052AE762A256CB04 /* Support Files */,
+			);
+			name = SCAVPlayer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5309416704E8B478A11D5B0F60111237 /* Pods-SCAVPlayer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				213C52B876A3BAD884188B3AF1E023D2 /* Pods-SCAVPlayer_Example.modulemap */,
+				24D27D0D5CB092C8D6929A38AF88208B /* Pods-SCAVPlayer_Example-acknowledgements.markdown */,
+				FBE5C671115081E89D81E9C7478AD144 /* Pods-SCAVPlayer_Example-acknowledgements.plist */,
+				00C65DD885CCB2153DEE96DF5D77622D /* Pods-SCAVPlayer_Example-dummy.m */,
+				6C00C802F884BC33E945B566C7406B4D /* Pods-SCAVPlayer_Example-frameworks.sh */,
+				A14452DEF31E164DF9B81A5C996E51B6 /* Pods-SCAVPlayer_Example-Info.plist */,
+				5981B054593F52696BDFBAEB1597A7F5 /* Pods-SCAVPlayer_Example-umbrella.h */,
+				D99E0120688F9013E9D1FD8DF58D0B2B /* Pods-SCAVPlayer_Example.debug.xcconfig */,
+				1892B384680FFAB55A3CF9651A9D6C8C /* Pods-SCAVPlayer_Example.release.xcconfig */,
+			);
+			name = "Pods-SCAVPlayer_Example";
+			path = "Target Support Files/Pods-SCAVPlayer_Example";
+			sourceTree = "<group>";
+		};
+		56DCBD9F2820BC7621C6BE0C63BDB846 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */,
+				7D46F8D1774C5008B1D072A57AC56EBC /* Pods_SCAVPlayer_Example.framework */,
+				31C4A8F16DDE2B9CB1FA4B3DAFDDA93E /* Pods_SCAVPlayer_Tests.framework */,
+				546FF1ED33CEB6647583D798CAF8237B /* SCAVPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C6D624E7BBF42C98965B5DAFC444C69 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4C7446560338FD29E1C8FD5586CA16A1 /* SCAVQueuePlayerDataSource.h */,
+			);
+			name = DataSource;
+			path = SCAVPlayer/Classes/DataSource;
+			sourceTree = "<group>";
+		};
+		79986FA53DC93DF123948945A0D57351 /* KVOController */ = {
+			isa = PBXGroup;
+			children = (
+				18C3212C0404C1E75A9A108D08BC6B09 /* FBKVOController.h */,
+				C8E1A3A5A6D67E7B1670D61DC2B03852 /* FBKVOController.m */,
+				590565EFA674898392EFD7E5E68DD13D /* KVOController.h */,
+				B12BD1702408F78DB227BF98AC60DB77 /* NSObject+FBKVOController.h */,
+				DA2DDCD06FE07830A05F6215378AD489 /* NSObject+FBKVOController.m */,
+				C8B2A2E6FE36ECBBB1A9D24DEC579F15 /* Support Files */,
+			);
+			name = KVOController;
+			path = KVOController;
+			sourceTree = "<group>";
+		};
+		8ACA68F61E124187EEF3AAFAEB6439AB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2CEA8A3810B197B37B1BE0993863AFA2 /* LICENSE */,
+				A9462464AA4A0E3E4BD11B9DE00F930A /* README.md */,
+				5D28CF104BCD7373FE8072F5B4D138FF /* SCAVPlayer.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8F7B5BD636A6B425448BF23F50A6D8A7 /* QueuePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6155BB82E77687E0E610D1EECC3650B2 /* SCAVQueuePlayer.h */,
+				B9F9CFF99427B2A8A327411F144B44D0 /* SCAVQueuePlayer.m */,
+			);
+			name = QueuePlayer;
+			path = QueuePlayer;
+			sourceTree = "<group>";
+		};
+		ABDF869AB8F77D1477F355C4110A14BA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26CCD2FED08DC33B0B076B111477CC95 /* SCAVPlayer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AC8DF454BE3CB92688089CE5C6FB8A27 /* Pods-SCAVPlayer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				81490FDFBDAE4CB52126F0424A4AFA2E /* Pods-SCAVPlayer_Tests.modulemap */,
+				730EF8F421C59B6D7D3E7D99F0C24892 /* Pods-SCAVPlayer_Tests-acknowledgements.markdown */,
+				AC89AB2BD644DEEA77FBCAD4D66FC97D /* Pods-SCAVPlayer_Tests-acknowledgements.plist */,
+				E7F0EE6C60AD912AEDB63493F4F18099 /* Pods-SCAVPlayer_Tests-dummy.m */,
+				256F164445465B6C81E4C041433A360E /* Pods-SCAVPlayer_Tests-Info.plist */,
+				C6C5DB5CC36840FC93F8415F7B3807E2 /* Pods-SCAVPlayer_Tests-umbrella.h */,
+				C3A5C2FB52B7E064DECEE0CC91A79065 /* Pods-SCAVPlayer_Tests.debug.xcconfig */,
+				20B45A48F10B9EA4FD382BFBC8E2C7F8 /* Pods-SCAVPlayer_Tests.release.xcconfig */,
+			);
+			name = "Pods-SCAVPlayer_Tests";
+			path = "Target Support Files/Pods-SCAVPlayer_Tests";
+			sourceTree = "<group>";
+		};
+		C8B2A2E6FE36ECBBB1A9D24DEC579F15 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69A4CB314A2B2B7E5DC5D13B8A8DC017 /* KVOController.modulemap */,
+				1D9F948D71767372BB492EA41C972847 /* KVOController-dummy.m */,
+				93A273DAB70F518778B64A6B25E5E7BE /* KVOController-Info.plist */,
+				56FCC91E6FB628DBD905FC393CBA689C /* KVOController-prefix.pch */,
+				F05CDBF9737F6A5325E0949C559D96E7 /* KVOController-umbrella.h */,
+				5D3B744CA423DDB35AA732FB8924B54E /* KVOController.debug.xcconfig */,
+				1F048B46EE717344AEC2A74F49762B61 /* KVOController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVOController";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				ABDF869AB8F77D1477F355C4110A14BA /* Development Pods */,
+				0C8EC282E109AE44014D5A1732D1F4D4 /* Frameworks */,
+				F37D9E3DF4B7B276818A1977FF720682 /* Pods */,
+				56DCBD9F2820BC7621C6BE0C63BDB846 /* Products */,
+				DB5541C7E57E7A513B83804441C84996 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D3B5463E302FE207146A36E5CE09D9 /* PlayerProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				68E47D0D169B70BBD60AE1134EBF39FB /* SCAVPlayerProtocol.h */,
+			);
+			name = PlayerProtocol;
+			path = PlayerProtocol;
+			sourceTree = "<group>";
+		};
+		DB5541C7E57E7A513B83804441C84996 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5309416704E8B478A11D5B0F60111237 /* Pods-SCAVPlayer_Example */,
+				AC8DF454BE3CB92688089CE5C6FB8A27 /* Pods-SCAVPlayer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E2020A1BBE6093DEECAECAD786E0ABE3 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				61B1E028A980825A822747E6D74104E4 /* SCAVQueuePlayerDelegate.h */,
+				FEEB58F28E5784BADC7C2BD1BFB97EF0 /* SCAVSinglePlayerDelegate.h */,
+			);
+			name = Delegate;
+			path = SCAVPlayer/Classes/Delegate;
+			sourceTree = "<group>";
+		};
+		E5B34EDA9B2455C8052AE762A256CB04 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2683BB7E551D032E286B12511A39E36C /* SCAVPlayer.modulemap */,
+				A1AEC2A624095661DB6D9939E19A4F57 /* SCAVPlayer-dummy.m */,
+				AB0CC850D22623D943F88B42CD0410ED /* SCAVPlayer-Info.plist */,
+				5ABD57A59A27BBE6CCAEB09DC78D9F82 /* SCAVPlayer-prefix.pch */,
+				87F94A08ACA43C561344DA603EA019B2 /* SCAVPlayer-umbrella.h */,
+				D61668B083F4C56979C7F82C4EA78551 /* SCAVPlayer.debug.xcconfig */,
+				14FE957A565F032E3780068A7E7973DE /* SCAVPlayer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SCAVPlayer";
+			sourceTree = "<group>";
+		};
+		F37D9E3DF4B7B276818A1977FF720682 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79986FA53DC93DF123948945A0D57351 /* KVOController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DB4FEB45B6E2F6FDD6DC54F4DCC8974 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4A5F0DA19F5C14F88F12D09EBB0071 /* Pods-SCAVPlayer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E8280AE2F8318F7CFD01D6D9EF74BE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A2B460366AE806A610C9B90C64B797 /* FBKVOController.h in Headers */,
+				19D62B5850DBBC1868A55E502FE22589 /* KVOController-umbrella.h in Headers */,
+				8EE50CA49BDB3CC47A65D143D798AA72 /* KVOController.h in Headers */,
+				1A09A36C7ED2126FE226AB9D55D2EEE6 /* NSObject+FBKVOController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AEE6C4D87EE5500F6EBC971498DCD31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97797310E35466CF24878C74AF98805D /* Pods-SCAVPlayer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B1A17688BC072C1D6AA361C81502E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BFC754978B8EF36DDEF963A7CE680F /* SCAVPlayer-umbrella.h in Headers */,
+				7ADB80CC36A8EC52BADEC7E7025237BA /* SCAVPlayerProtocol.h in Headers */,
+				CC7F5C0A252079A5FA9A9DEA41BCBEE6 /* SCAVQueuePlayer.h in Headers */,
+				AC5F062ED795308440DFF6B02FE01CF7 /* SCAVQueuePlayerDataSource.h in Headers */,
+				0CA38C774983DF3795B3126DF160510B /* SCAVQueuePlayerDelegate.h in Headers */,
+				292C2B4CAA588D9AF6F21B99DEF0AD8D /* SCAVSinglePlayer.h in Headers */,
+				E76DE0EFCEE3CD2D80FF8D7A61178DE9 /* SCAVSinglePlayerDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605360BAC5A14D6B62096A72BE755391 /* Build configuration list for PBXNativeTarget "KVOController" */;
+			buildPhases = (
+				0E8280AE2F8318F7CFD01D6D9EF74BE4 /* Headers */,
+				1EB910ACA7B3AC52692D864DA7E60506 /* Sources */,
+				AA749837471EE842F4B01CE102FA2469 /* Frameworks */,
+				C6CEE298C180498CBB5D7D482DE940BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVOController;
+			productName = KVOController;
+			productReference = 399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		578DDBE1409B4EC8460CDCFACCA8EA46 /* Pods-SCAVPlayer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DCBDBF052D37ADE3F736E3073CAF6E /* Build configuration list for PBXNativeTarget "Pods-SCAVPlayer_Example" */;
+			buildPhases = (
+				5AEE6C4D87EE5500F6EBC971498DCD31 /* Headers */,
+				1EC6B96AADF4F58A387D4D6F91574E0B /* Sources */,
+				A2ADB63F05C90C1583748CC273864200 /* Frameworks */,
+				0F8592B26EE5EBC9B9195819546FB892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4E0E23ED1607D42C6135255B7FF835E /* PBXTargetDependency */,
+				BFD0FF98B2056C602650782B831A354B /* PBXTargetDependency */,
+			);
+			name = "Pods-SCAVPlayer_Example";
+			productName = "Pods-SCAVPlayer_Example";
+			productReference = 7D46F8D1774C5008B1D072A57AC56EBC /* Pods_SCAVPlayer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B920642F136A732ECE69A41CA4754D70 /* Pods-SCAVPlayer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E85EF0E811347E956066E9A87628060F /* Build configuration list for PBXNativeTarget "Pods-SCAVPlayer_Tests" */;
+			buildPhases = (
+				0DB4FEB45B6E2F6FDD6DC54F4DCC8974 /* Headers */,
+				5CE4A0362DB92A738C054F070F78C9FE /* Sources */,
+				9ED76D1E33EB354602B4FA9ABDF67D53 /* Frameworks */,
+				111D18AF4167EA304DF229301699350D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CA8CCB5695A652E361939AD2B1D6D7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SCAVPlayer_Tests";
+			productName = "Pods-SCAVPlayer_Tests";
+			productReference = 31C4A8F16DDE2B9CB1FA4B3DAFDDA93E /* Pods_SCAVPlayer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F920761D9ECF6D9E6DA86D6AD0A32FEB /* SCAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3C23D16F22DEE005C1D008F9656492 /* Build configuration list for PBXNativeTarget "SCAVPlayer" */;
+			buildPhases = (
+				95B1A17688BC072C1D6AA361C81502E3 /* Headers */,
+				46FCDC3B87FCFF6F17965A92F148F3DB /* Sources */,
+				9F742DCE7CEB4316ADF3F383D4742439 /* Frameworks */,
+				CC3A9E15D2F69218871EC02F83896C0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE946FBFFCD3359A5E4FC4CB56BC005E /* PBXTargetDependency */,
+			);
+			name = SCAVPlayer;
+			productName = SCAVPlayer;
+			productReference = 546FF1ED33CEB6647583D798CAF8237B /* SCAVPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 56DCBD9F2820BC7621C6BE0C63BDB846 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */,
+				578DDBE1409B4EC8460CDCFACCA8EA46 /* Pods-SCAVPlayer_Example */,
+				B920642F136A732ECE69A41CA4754D70 /* Pods-SCAVPlayer_Tests */,
+				F920761D9ECF6D9E6DA86D6AD0A32FEB /* SCAVPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F8592B26EE5EBC9B9195819546FB892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111D18AF4167EA304DF229301699350D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CEE298C180498CBB5D7D482DE940BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3A9E15D2F69218871EC02F83896C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EB910ACA7B3AC52692D864DA7E60506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C11FE884391249C5154C3E319CDF /* FBKVOController.m in Sources */,
+				AB8C349C46978DF528A142C1C0959039 /* KVOController-dummy.m in Sources */,
+				889E2157616BF0844E55BCDC2C30A278 /* NSObject+FBKVOController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6B96AADF4F58A387D4D6F91574E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1B2B6EA1B542FA5C209768310B4E37 /* Pods-SCAVPlayer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46FCDC3B87FCFF6F17965A92F148F3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D59280150350F92984655DB59A0E060 /* SCAVPlayer-dummy.m in Sources */,
+				6294D870F849605603DB74BC4EC378A3 /* SCAVQueuePlayer.m in Sources */,
+				CE1978D446DB9AEBB67353744FD89723 /* SCAVSinglePlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE4A0362DB92A738C054F070F78C9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5D96082E891F92F295966FD0B1E8AC /* Pods-SCAVPlayer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4E0E23ED1607D42C6135255B7FF835E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = 2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */;
+			targetProxy = F0F592465FC4EE10CAA53B7AFA6964D5 /* PBXContainerItemProxy */;
+		};
+		BE946FBFFCD3359A5E4FC4CB56BC005E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = 2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */;
+			targetProxy = 697CE195868884C1051B37004772801B /* PBXContainerItemProxy */;
+		};
+		BFD0FF98B2056C602650782B831A354B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCAVPlayer;
+			target = F920761D9ECF6D9E6DA86D6AD0A32FEB /* SCAVPlayer */;
+			targetProxy = E26D5F9765B406AF2D211710D38D000C /* PBXContainerItemProxy */;
+		};
+		D4CA8CCB5695A652E361939AD2B1D6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SCAVPlayer_Example";
+			target = 578DDBE1409B4EC8460CDCFACCA8EA46 /* Pods-SCAVPlayer_Example */;
+			targetProxy = E58A09A546A1E98DEE9A247750D2C7BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10B29771999E5662F10A8BAB6F46A142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20B45A48F10B9EA4FD382BFBC8E2C7F8 /* Pods-SCAVPlayer_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SCAVPlayer_Tests/Pods-SCAVPlayer_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SCAVPlayer_Tests/Pods-SCAVPlayer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A17BF2D4C1AF57159AC14D2FF1AF724 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FE957A565F032E3780068A7E7973DE /* SCAVPlayer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCAVPlayer/SCAVPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCAVPlayer/SCAVPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCAVPlayer/SCAVPlayer.modulemap";
+				PRODUCT_MODULE_NAME = SCAVPlayer;
+				PRODUCT_NAME = SCAVPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53A57AE08C23137715B06C3CA0C71F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3A5C2FB52B7E064DECEE0CC91A79065 /* Pods-SCAVPlayer_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SCAVPlayer_Tests/Pods-SCAVPlayer_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SCAVPlayer_Tests/Pods-SCAVPlayer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5840F06929630E3FB6217F795845D439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1892B384680FFAB55A3CF9651A9D6C8C /* Pods-SCAVPlayer_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D34C8B2C74DBAD9AF7BA6E2DDA84371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3B744CA423DDB35AA732FB8924B54E /* KVOController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVOController/KVOController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVOController/KVOController.modulemap";
+				PRODUCT_MODULE_NAME = KVOController;
+				PRODUCT_NAME = KVOController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		95044A7016C9FE9AC971AF153AEB8615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61668B083F4C56979C7F82C4EA78551 /* SCAVPlayer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCAVPlayer/SCAVPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCAVPlayer/SCAVPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCAVPlayer/SCAVPlayer.modulemap";
+				PRODUCT_MODULE_NAME = SCAVPlayer;
+				PRODUCT_NAME = SCAVPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A545FB133FCEC8E52116C4D8B7E4F27D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99E0120688F9013E9D1FD8DF58D0B2B /* Pods-SCAVPlayer_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SCAVPlayer_Example/Pods-SCAVPlayer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9E022EFB7CDD7EAC06EA86F263B620B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F048B46EE717344AEC2A74F49762B61 /* KVOController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVOController/KVOController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVOController/KVOController.modulemap";
+				PRODUCT_MODULE_NAME = KVOController;
+				PRODUCT_NAME = KVOController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3C23D16F22DEE005C1D008F9656492 /* Build configuration list for PBXNativeTarget "SCAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95044A7016C9FE9AC971AF153AEB8615 /* Debug */,
+				2A17BF2D4C1AF57159AC14D2FF1AF724 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605360BAC5A14D6B62096A72BE755391 /* Build configuration list for PBXNativeTarget "KVOController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D34C8B2C74DBAD9AF7BA6E2DDA84371 /* Debug */,
+				F9E022EFB7CDD7EAC06EA86F263B620B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DCBDBF052D37ADE3F736E3073CAF6E /* Build configuration list for PBXNativeTarget "Pods-SCAVPlayer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A545FB133FCEC8E52116C4D8B7E4F27D /* Debug */,
+				5840F06929630E3FB6217F795845D439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85EF0E811347E956066E9A87628060F /* Build configuration list for PBXNativeTarget "Pods-SCAVPlayer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A57AE08C23137715B06C3CA0C71F67 /* Debug */,
+				10B29771999E5662F10A8BAB6F46A142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

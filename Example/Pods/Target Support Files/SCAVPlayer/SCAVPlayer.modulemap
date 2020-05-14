@@ -1,0 +1,6 @@
+framework module SCAVPlayer {
+  umbrella header "SCAVPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

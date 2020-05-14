@@ -1,0 +1,23 @@
+PODS:
+  - KVOController (1.2.0)
+  - SCAVPlayer (1.0.0):
+    - KVOController (= 1.2.0)
+
+DEPENDENCIES:
+  - SCAVPlayer (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KVOController
+
+EXTERNAL SOURCES:
+  SCAVPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  SCAVPlayer: 930c247de87c7a4951ac7489f307533085b726c7
+
+PODFILE CHECKSUM: 775c67f58ade9372c7effd68bf20a2f843da9e23
+
+COCOAPODS: 1.9.1

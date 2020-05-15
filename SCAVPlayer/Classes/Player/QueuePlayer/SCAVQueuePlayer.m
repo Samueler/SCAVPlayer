@@ -77,7 +77,7 @@
 }
 
 - (void)seekToSecond:(NSTimeInterval)second {
-    [self.queuePlayer seekToTime:CMTimeMake(second, NSEC_PER_SEC)];
+    [self.queuePlayer seekToTime:CMTimeMake(second, 1)];
 }
 
 - (void)seekToPercent:(float)percent {
@@ -169,12 +169,16 @@
     self.timeObserver = nil;
     __weak typeof(self) weakSelf = self;
     self.timeObserver = [self.queuePlayer addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         NSTimeInterval currentDuration = CMTimeGetSeconds(time);
         NSTimeInterval totalDuration = CMTimeGetSeconds(weakSelf.queuePlayer.currentItem.duration);
         
-        if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(queuePlayer:currentDuration:totalDuration:)]) {
-            [weakSelf.delegate queuePlayer:weakSelf currentDuration:currentDuration totalDuration:totalDuration];
+        strongSelf->_currentDuration = currentDuration;
+        strongSelf->_totalDuration = totalDuration;
+        
+        if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(queuePlayer:currentDuration:totalDuration:)]) {
+            [strongSelf.delegate queuePlayer:strongSelf currentDuration:currentDuration totalDuration:totalDuration];
         }
     }];
 }
@@ -188,11 +192,14 @@
     }];
     
     [self.kvoController observe:self.queuePlayer.currentItem keyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         NSArray *loadedTimeRanges = weakSelf.queuePlayer.currentItem.loadedTimeRanges;
         CMTimeRange timeRange = [loadedTimeRanges.firstObject CMTimeRangeValue];
         NSTimeInterval bufferedDuration = CMTimeGetSeconds(timeRange.start) + CMTimeGetSeconds(timeRange.duration);
         
-        [weakSelf setupBufferedDuration:bufferedDuration];
+        strongSelf->_bufferedDuration = bufferedDuration;
+        
+        [strongSelf setupBufferedDuration:bufferedDuration];
     }];
     
     [self.kvoController observe:self.queuePlayer keyPath:@"currentItem" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {

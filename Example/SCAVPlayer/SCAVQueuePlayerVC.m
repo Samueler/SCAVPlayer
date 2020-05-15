@@ -49,6 +49,18 @@ SCAVQueuePlayerDelegate
     btn1.backgroundColor = [UIColor orangeColor];
     [btn1 addTarget:self action:@selector(btn1Click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
+    
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(0, 200, 100, 44)];
+    [btn2 setTitle:@"进5s" forState:UIControlStateNormal];
+    btn2.backgroundColor = [UIColor orangeColor];
+    [btn2 addTarget:self action:@selector(btn2Click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn2];
+    
+    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(120, 200, 100, 44)];
+    [backBtn setTitle:@"退5s" forState:UIControlStateNormal];
+    backBtn.backgroundColor = [UIColor orangeColor];
+    [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
 }
 
 - (void)btnClick {
@@ -57,6 +69,14 @@ SCAVQueuePlayerDelegate
 
 - (void)btn1Click {
     [self.queuePlayer advanceToPreviousItem];
+}
+
+- (void)btn2Click {
+    [self.queuePlayer seekToSecond:self.queuePlayer.currentDuration + 5];
+}
+
+- (void)backBtnClick {
+    [self.queuePlayer seekToSecond:self.queuePlayer.currentDuration - 5];
 }
 
 #pragma mark - SCAVQueuePlayerDataSource

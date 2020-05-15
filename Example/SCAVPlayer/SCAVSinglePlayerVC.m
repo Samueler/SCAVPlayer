@@ -22,12 +22,32 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.player = [SCAVSinglePlayer singlePlayerWithURL:[NSURL URLWithString:@"https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200ff00000bdkpfpdd2r6fb5kf6m50&line=0.mp4"] loopCount:0];
+    self.player = [SCAVSinglePlayer singlePlayerWithURL:[NSURL URLWithString:@"https://mvvideo5.meitudata.com/56ea0e90d6cb2653.mp4"] loopCount:0];
     self.player.delegate = self;
     [self.view.layer addSublayer:self.player.playerLayer];
     self.player.playerLayer.frame = self.view.bounds;
     
     [self.player play];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 100, 44)];
+    [btn setTitle:@"进5s" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(120, 100, 100, 44)];
+    [backBtn setTitle:@"退5s" forState:UIControlStateNormal];
+    backBtn.backgroundColor = [UIColor orangeColor];
+    [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
+}
+
+- (void)btnClick {
+    [self.player seekToSecond:self.player.currentDuration + 5];
+}
+
+- (void)backBtnClick {
+    [self.player seekToSecond:self.player.currentDuration - 5];
 }
 
 #pragma mark - SCAVSinglePlayerDelegate

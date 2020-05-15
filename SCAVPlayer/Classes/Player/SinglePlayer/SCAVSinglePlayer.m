@@ -88,7 +88,7 @@
 }
 
 - (void)seekToSecond:(NSTimeInterval)second {
-    [self.player seekToTime:CMTimeMake(second, NSEC_PER_SEC)];
+    [self.player seekToTime:CMTimeMake(second, 1)];
 }
 
 - (void)seekToPercent:(float)percent {
@@ -117,12 +117,15 @@
     self.timeObserver = nil;
     __weak typeof(self) weakSelf = self;
     self.timeObserver = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-        
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         NSTimeInterval currentDuration = CMTimeGetSeconds(time);
         NSTimeInterval totalDuration = CMTimeGetSeconds(weakSelf.player.currentItem.duration);
         
-        if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(singlePlayer:currentDuration:totalDuration:)]) {
-            [weakSelf.delegate singlePlayer:weakSelf currentDuration:currentDuration totalDuration:totalDuration];
+        strongSelf->_currentDuration = currentDuration;
+        strongSelf->_totalDuration = totalDuration;
+        
+        if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(singlePlayer:currentDuration:totalDuration:)]) {
+            [strongSelf.delegate singlePlayer:strongSelf currentDuration:currentDuration totalDuration:totalDuration];
         }
     }];
 }
@@ -136,11 +139,14 @@
     }];
     
     [self.kvoController observe:self.player.currentItem keyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         NSArray *loadedTimeRanges = weakSelf.player.currentItem.loadedTimeRanges;
         CMTimeRange timeRange = [loadedTimeRanges.firstObject CMTimeRangeValue];
         NSTimeInterval bufferedDuration = CMTimeGetSeconds(timeRange.start) + CMTimeGetSeconds(timeRange.duration);
         
-        [weakSelf setupBufferedDuration:bufferedDuration];
+        strongSelf->_bufferedDuration = bufferedDuration;
+        
+        [strongSelf setupBufferedDuration:bufferedDuration];
     }];
 }
 

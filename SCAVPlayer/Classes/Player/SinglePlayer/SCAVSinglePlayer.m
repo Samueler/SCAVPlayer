@@ -117,17 +117,20 @@
     self.timeObserver = nil;
     __weak typeof(self) weakSelf = self;
     self.timeObserver = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-        __strong typeof(weakSelf) strongSelf = weakSelf;
         NSTimeInterval currentDuration = CMTimeGetSeconds(time);
         NSTimeInterval totalDuration = CMTimeGetSeconds(weakSelf.player.currentItem.duration);
         
-        strongSelf->_currentDuration = currentDuration;
-        strongSelf->_totalDuration = totalDuration;
+        [weakSelf setupCurrentDuration:currentDuration totalDuration:totalDuration];
         
-        if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(singlePlayer:currentDuration:totalDuration:)]) {
-            [strongSelf.delegate singlePlayer:strongSelf currentDuration:currentDuration totalDuration:totalDuration];
+        if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(singlePlayer:currentDuration:totalDuration:)]) {
+            [weakSelf.delegate singlePlayer:weakSelf currentDuration:currentDuration totalDuration:totalDuration];
         }
     }];
+}
+
+- (void)setupCurrentDuration:(NSTimeInterval)currentDuration totalDuration:(NSTimeInterval)totalDuration {
+    self->_currentDuration = currentDuration;
+    self->_totalDuration = totalDuration;
 }
 
 - (void)setupPlayerItemObserver {
@@ -139,16 +142,15 @@
     }];
     
     [self.kvoController observe:self.player.currentItem keyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
-        __strong typeof(weakSelf) strongSelf = weakSelf;
         NSArray *loadedTimeRanges = weakSelf.player.currentItem.loadedTimeRanges;
         CMTimeRange timeRange = [loadedTimeRanges.firstObject CMTimeRangeValue];
         NSTimeInterval bufferedDuration = CMTimeGetSeconds(timeRange.start) + CMTimeGetSeconds(timeRange.duration);
         
-        strongSelf->_bufferedDuration = bufferedDuration;
-        
-        [strongSelf setupBufferedDuration:bufferedDuration];
+        [weakSelf setupBufferedDuration:bufferedDuration];
     }];
 }
+
+
 
 - (void)setupCurrentStatus:(SCAVPlayerStatus)status {
     if (self.currentStatus == status) {
